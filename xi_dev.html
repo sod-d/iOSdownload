@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../css/morpheus-style.css" />
+	<style>
+		li img {
+			border: 1px solid lightgray;
+		}
+	</style>
+    <title>Xi CSMS IOS 앱 다운로드</title>
+  </head>
+  <body>
+    <div class="wrapper">
+     <div class="install">
+         <div class="top-header">
+            <h1 class="logo">GS건설 Xi CSMS</h1>
+            <h2 class="title"></h2>
+            <p class="download">GS건설의 Xi CSMS를 다운로드합니다. 운영서버의 개발폴더 22번</p>
+            <p class="download-install">ios 설치방법</p>
+         </div>
+         <div class="content">
+            <div class="install-order">
+                <div class="list">
+                    <ul>
+                        <li class="txt">하단의 App Store 다운로드 버튼을 터치하여 앱을 다운받습니다.</li>
+                        <li class="txt">아래 그림과 같은 창이 뜨면 설치 버튼을 클릭합니다.</li>
+                        <li class="img"><img src="../img/img-install-sample-1.png" alt=""></li>
+                        <li class="txt">기기의 바탕화면에 실트론스토어 설치가 완료됩니다.</li>
+                        <li class="txt">설치 후 앱 아이콘 클릭 시 아래와 같이 인증서에 대해 신뢰하지 않는다는 메시지가 나옵니다.</li>
+                        <li class="img"><img src="../img/ios02.jpg" alt=""></li>
+                        <li class="txt">설정 > 일반 > 기기 관리 메뉴를 클릭합니다.</li>
+                        <li class="img"><img src="../img/ios03.jpg" alt=""></li>
+                        <li class="txt">인증서 목록 중 GS인증서를 선택합니다.</li>
+                        <li class="img"><img src="../img/ios04.jpg" alt=""></li>
+                        <li class="txt">인증서 신뢰 버튼을 클릭합니다.</li>
+                        <li class="img"><img src="../img/ios05.jpg" alt=""></li>
+                        <li class="txt">인증서 신뢰 팝업 창이 호출되고 신뢰 버튼을 누른 뒤 앱 아이콘을 클릭하면 실행 가능합니다.</li>
+                        <li class="img"><img src="../img/ios06.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="App-doenload">
+			<p style="padding: 10px;">업데이트 : 2024년 11월 11일 09시 00분(v1.0.2)</p>
+			<button type="button" onclick="downIpa();"><span>Xi SND CSMS 앱 다운로드</span></button>
+		</div>
+     </div>
+
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+	
+	function downIpa(){
+		downPage = "itms-services://?action=download-manifest&url=https://sod-d.github.io/iOSdownload/xisnd.plist";
+		location.href = downPage;
+	}
+</script>
